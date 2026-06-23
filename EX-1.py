@@ -3,7 +3,6 @@ from tkinter import messagebox, simpledialog
 
 
 
-
 class ContaBancaria:
     numeros_contas = []
     def __init__(self, titular, numero, saldo):
