@@ -8,7 +8,7 @@ class ContaBancaria:
     def __init__(self, titular, numero, saldo):
         self.__titular = titular
         self.__numero = numero
-
+        
 
         if saldo < 0:
             self.__saldo = 0
