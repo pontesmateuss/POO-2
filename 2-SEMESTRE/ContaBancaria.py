@@ -102,3 +102,66 @@ class ContaBancaria:
             if cls.numeros_contas.count(numero) > 1 and numero not in duplicadas:
                 duplicadas.append(numero)
         return duplicadas
+
+
+
+class ContaCorrente(ContaBancaria): 
+    def __init__(self, cliente: Cliente, numero: str, saldo: float):
+        super().__init__(cliente, numero, saldo)
+
+    def sacar(self, valor: float) -> bool:
+        return super().sacar(valor)
+    
+    def cobrar_tarifa():
+        return
+    
+    def exibir_dados(self) -> str:
+        return super().exibir_dados()
+    
+    def get_tipo_conta():
+        return
+
+
+
+class ContaPoupanca(ContaBancaria):
+    def __init__(self, cliente: Cliente, numero: str, taxa_rendimento: float):
+        super().__init__(cliente, numero, taxa_rendimento)
+
+    def sacar(valor: float):
+        return
+    
+    def render_juros():
+        return
+    
+    def exibir_dados(self) -> str:
+        return super().exibir_dados()
+    
+    def get_tipo_conta():
+        return
+
+
+    
+class ContaSalario(ContaBancaria):
+    def __init__(self, empresa: Cliente, saques_realizados: str, limite_saques: float):
+        def __init__( empresa: str, saques_realizados: int, limite_saques: int):
+            self.__empresa = empresa
+            self.__saques_realizados - saques_realizados
+            self.__limite_saques = limite_saques
+
+    def receber_salario(valor: float):
+        return
+    
+    def sacar(self, valor: float) -> bool:
+        return super().sacar(valor)
+    
+    def depositar(self, valor: float) -> None:
+        return super().depositar(valor)
+    
+    def transferir(self, valor: float, conta_destino: ContaBancaria) -> bool:
+        return super().transferir(valor, conta_destino)
+    
+    def exibir_dados(self) -> str:
+        return super().exibir_dados()
+
+    def get_tipo_conta():
+        return
