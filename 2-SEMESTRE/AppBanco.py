@@ -160,7 +160,7 @@ class BancoApp:
             else:
                 messagebox.showerror(
                     "Erro",
-                    "Saldo insuficiente ou valor inválido."
+                    "Saldo insuficiente, valor inválido."
                 )
         self.atualizar_tela()
     def transferir(self, conta_origem):
@@ -201,7 +201,7 @@ class BancoApp:
         else:
             messagebox.showerror(
                 "Erro",
-                "Saldo insuficiente ou valor inválido."
+                "Saldo insuficiente, valor inválido ou conta salário não pode receber e nem fazer transferencias."
             )
         self.atualizar_tela()
     def exibir_dados(self, conta):
