@@ -26,13 +26,13 @@ class BancoApp:
         cliente6 = Cliente("Maria", "444.444.444-44", end6)
 
         self.contas = [
-            ContaCorrente(cliente1, "1002", 1000.0),
-            ContaCorrente(cliente2, "1003", 300.0),
-            ContaPoupanca(cliente3, "1004", 20.0),
+            ContaBancaria(cliente1, "1002", 1000.0),
+            ContaBancaria(cliente2, "1003", 300.0),
+            ContaBancaria(cliente3, "1004", 20.0),
             ContaPoupanca(cliente4, "1005", 50.0),
-            ContaSalario(cliente5, "1006", 100.0, "IFRN"),
+            ContaSalario(cliente5, "1006", 100.0),
             ContaCorrente(cliente6, "1007", 3000.0)
-]
+        ]
        
         self.criar_interface()
 
@@ -68,14 +68,6 @@ class BancoApp:
                 text=conta.get_titular().get_nome(),
                 font=("Arial", 14, "bold")
             )
-
-            lbl_tipo = tk.Label(
-                frame,
-                text=conta.get_tipo_conta(),
-                font=("Arial", 10, "italic")
-            )
-            lbl_tipo.pack()
-            
             lbl_titular.pack()
 
 
