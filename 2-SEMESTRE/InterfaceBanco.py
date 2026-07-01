@@ -11,9 +11,9 @@ class BancoApp:
         self.janela.geometry("850x400")
 
 
-        end1 = Endereco("Rua A", 1000, "Cohab", "Ceará-Mirim")
-        end2 = Endereco("Rua B", 123, "Centro", "Natal")
-        end3 = Endereco("Rua C", 456, "São Geraldo", "Ceará-Mirim")
+        end1 = Endereco("Rua Aviador", 1000, "Cohab", "Ceará-Mirim")
+        end2 = Endereco("Rua Bonita", 123, "Centro", "Natal")
+        end3 = Endereco("Rua Curricular", 456, "São Geraldo", "Ceará-Mirim")
         end4 = Endereco("Rua Centenárea", 426, "São Geraldo", "Ceará-Mirim")
         end5 = Endereco("Rua Centenárea", 455, "São Geraldo", "Ceará-Mirim")
         end6 = Endereco("Rua Centenárea", 490, "São Geraldo", "Ceará-Mirim")
