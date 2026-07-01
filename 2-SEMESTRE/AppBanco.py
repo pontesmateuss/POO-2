@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, simpledialog
-from ContaBancaria import Endereco, ContaBancaria, Cliente, ContaCorrente, ContaPoupanca, ContaSalario
+from ContasBancarias import Endereco, ContaBancaria, Cliente, ContaCorrente, ContaPoupanca, ContaSalario
 
 
 
