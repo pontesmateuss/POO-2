@@ -14,9 +14,9 @@ class BancoApp:
         end1 = Endereco("Rua A", 1000, "Cohab", "Ceará-Mirim")
         end2 = Endereco("Rua B", 123, "Centro", "Natal")
         end3 = Endereco("Rua C", 456, "São Geraldo", "Ceará-Mirim")
-        end4 = Endereco("Rua C", 456, "São Geraldo", "Ceará-Mirim")
-        end5 = Endereco("Rua C", 456, "São Geraldo", "Ceará-Mirim")
-        end6 = Endereco("Rua C", 456, "São Geraldo", "Ceará-Mirim")
+        end4 = Endereco("Rua Centenárea", 426, "São Geraldo", "Ceará-Mirim")
+        end5 = Endereco("Rua Centenárea", 455, "São Geraldo", "Ceará-Mirim")
+        end6 = Endereco("Rua Centenárea", 490, "São Geraldo", "Ceará-Mirim")
        
         cliente1 = Cliente("Mateus", "100.200.300-04", end1)
         cliente2 = Cliente("Pedro", "111.222.333-44", end2)
