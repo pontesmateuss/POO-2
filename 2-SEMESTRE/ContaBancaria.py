@@ -110,9 +110,8 @@ class ContaBancaria:
         return duplicadas
 
 
-# ===========================
 # CONTA CORRENTE
-# ===========================
+
 
 class ContaCorrente(ContaBancaria):
 
@@ -156,9 +155,8 @@ class ContaCorrente(ContaBancaria):
         return "Conta Corrente"
 
 
-# ===========================
 # CONTA POUPANÇA
-# ===========================
+
 
 class ContaPoupanca(ContaBancaria):
 
@@ -183,9 +181,8 @@ class ContaPoupanca(ContaBancaria):
         return "Conta Poupança"
 
 
-# ===========================
 # CONTA SALÁRIO
-# ===========================
+
 
 class ContaSalario(ContaBancaria):
 
