@@ -53,7 +53,6 @@ class Cliente:
 
 
 class ContaBancaria:
-
     numeros_contas = []
 
     def __init__(self, cliente: Cliente, numero: str, saldo: float):
@@ -114,7 +113,6 @@ class ContaBancaria:
 
 
 class ContaCorrente(ContaBancaria):
-
     def __init__(self, cliente, numero, saldo,
                  limite=500.0,
                  tarifa_mensal=20.0):
@@ -125,12 +123,10 @@ class ContaCorrente(ContaBancaria):
         self.__tarifa_mensal = tarifa_mensal
 
     def sacar(self, valor):
-
         if valor <= 0:
             return False
 
         if self.get_saldo() + self.__limite >= valor:
-
             if valor <= self._saldo:
                 self._saldo -= valor
             else:
@@ -139,7 +135,7 @@ class ContaCorrente(ContaBancaria):
                 self.__limite -= restante
 
             return True
-
+        
         return False
 
     def cobrar_tarifa(self):
